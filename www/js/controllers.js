@@ -33,8 +33,9 @@ angular.module('starter.controllers', [])
 .controller("ScanController", function($scope, $cordovaBarcodeScanner){
 	
 	$scope.scanBarcode = function(){
-				var link = "/tab/animals";
+				var link = "#/tab/animals";
 				alert(link);
+				$( location ).attr("href", link);
 		$cordovaBarcodeScanner.scan().then(function(barcodeData){
 			//console.log("format"+ barcodeData.format);
 			//alert(barcodeData.text);

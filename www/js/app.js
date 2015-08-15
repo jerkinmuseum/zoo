@@ -64,16 +64,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.animals'])
       views: {
         'tab-animals': {
           templateUrl: 'templates/tab-animals.html',
-          controller: 'AnimalsCtrl'
-        }
-      }
-    })
-    .state('tab.animal-detail', {
-      url: '/animals/:animalId',
-      views: {
-        'tab-animals': {
-          templateUrl: 'templates/animal-detail.html',
-          controller: 'AnimalDetailCtrl'
         }
       }
     })

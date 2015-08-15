@@ -1,1 +1,34 @@
 /* Empty. Add your own CSS if you like */
+body{
+	margin:0;
+	padding:0
+	background-color:#111!important;
+}
+
+.animals-item{
+	width:90%;
+	margin:2% 5%;
+	padding:0;
+	border-radius:4px;
+}
+
+.animals-item div{
+	height:220px;
+	overflow: hidden;
+	position: relative;
+}
+
+.animals-item img{
+	width:100%;
+	position:absolute;
+	margin-top:-40px;
+	
+}
+
+.animals-item h2{
+	text-align:center;
+	font-weight:bold;
+	font-size:30px;
+	display:block;
+	padding:3%;
+}

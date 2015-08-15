@@ -1,9 +1,11 @@
 <ion-view view-title="Animals">
-  <ion-content>
-    <h2>Animals</h2>
+  <ion-content ng-controller="AnimalsCtrl" >
 	<ion-list>
-      <ion-item ng-repeat="animal in animals">
-        {{animal.title}}
+      <ion-item class="animals-item wow fadeInUp" ng-repeat="animal in animals" >
+      	<div >
+      		<img ng-src="{{animal.face}}">
+      	</div>
+        <h2>{{animal.name}}</h2>
       </ion-item>
     </ion-list>
   </ion-content>

@@ -4,18 +4,26 @@ angular.module('starter.animals', [])
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var chats = [{
+  var animals = [{
     id: 0,
     name: 'Lion',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    face: 'http://www.lionaid.org/media/spartpressImages/do-volunteers-contribute-to-lion-conservation-by-paying-to-participate-in-research-programs-on-small-private-reserves-2.jpg'
   }, {
     id: 1,
     name: 'Wolf',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+    face: 'http://dreamatico.com/data_images/wolf/wolf-5.jpg'
   }, {
     id: 2,
+    name: 'Llama',
+    face: 'https://pbs.twimg.com/media/B-zyTzEUsAEVhNX.jpg'
+  }, {
+    id: 3,
     name: 'Bear',
-    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+    face: 'http://cinematicshadows.com/wp-content/uploads/2015/08/bear-blinkkig-eyes.jpg'
+  }, {
+    id: 4,
+    name: 'Elephant',
+    face: 'http://cinematicshadows.com/wp-content/uploads/2015/08/bear-blinkkig-eyes.jpg'
   }];
 
   return {

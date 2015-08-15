@@ -1,7 +1,7 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
-/*
+
 .controller('AnimalsCtrl', function($scope, Animals) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -17,7 +17,6 @@ angular.module('starter.controllers', [])
   };
   
 })
-*/
 
 .controller('AnimalDetailCtrl', function($scope, $stateParams, Animals) {
   $scope.animal = Animals.get($stateParams.animalId);
@@ -28,3 +27,4 @@ angular.module('starter.controllers', [])
     enableFriends: true
   };
 });
+

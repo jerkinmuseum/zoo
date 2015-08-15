@@ -1,5 +1,30 @@
 // Ionic Starter App
+var isOnline = function () {
+  var isConnected = false;
+  var networkConnection = navigator.connection;
+  if (!networkConnection.type) {
+    $log.error('networkConnection.type is not defined');
+    return false;
+  }
 
+  switch (networkConnection.type.toLowerCase()) {
+    case 'ethernet':
+    case 'wifi':
+    case 'cell_2g':
+    case 'cell_3g':
+    case 'cell_4g':
+    case '2g':
+    case '3g':
+    case '4g':
+    case 'cell':
+    case 'cellular':
+      isConnected = true;
+      break;
+  }
+
+  $log.log('isOnline? '+ isConnected);
+  return isConnected;
+};
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'

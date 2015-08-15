@@ -50,16 +50,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
   
-  .state('tab.animals', {
-    url: '/animals',
-    views: {
-      'tab-animals': {
-        templateUrl: 'templates/tab-animals.html',
-        controller: 'AnimalsCtrl'
-      }
-    }
-  })
-  
   .state('tab.scan', {
     url: '/scan',
     views: {
@@ -69,21 +59,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.animals', {
+      url: '/animals',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-animals': {
+          templateUrl: 'templates/tab-animals.html',
+          controller: 'AnimalsCtrl'
         }
       }
     })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
+    .state('tab.animal-detail', {
+      url: '/animals/:animalId',
       views: {
         'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
+          templateUrl: 'templates/animal-detail.html',
+          controller: 'AnimalDetailCtrl'
         }
       }
     })

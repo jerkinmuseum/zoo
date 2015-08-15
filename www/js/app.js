@@ -30,7 +30,7 @@ var isOnline = function () {
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.animals'])
+var zoo = angular.module('starter', ['ionic', 'starter.controllers', 'starter.animals', 'ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -116,3 +116,5 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.animals'])
   $urlRouterProvider.otherwise('/tab/dash');
 
 });
+
+

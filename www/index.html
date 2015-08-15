@@ -12,11 +12,13 @@
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/lib/ng-cordova.min.js"></script>
     <script src="cordova.js"></script>
 
 	<script src="js/lib/wow.min.js"></script>
@@ -25,7 +27,7 @@
     <script src="js/controllers.js"></script>
     <script src="js/animals.js"></script>
   </head>
-  <body ng-app="starter" >
+  <body ng-app="starter">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
@@ -39,17 +41,5 @@
       have templates inline in this html file if you'd like).
     -->
     <ion-nav-view></ion-nav-view>
-              <script>
-              wow = new WOW(
-                      {
-                      boxClass:     'wow',      // default
-                      animateClass: 'animated', // default
-                      offset:       0,          // default
-                      mobile:       true,       // default
-                      live:         true        // default
-                    }
-                    )
-                    wow.init();
-              </script>
   </body>
 </html>

@@ -26,5 +26,27 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
+})
+
+
+//my barcode scanner
+.controller("ScanController", function($scope, $cordovaBarcodeScanner){
+	
+	$scope.scanBarcode = function(){
+				var link = "/tab/animals";
+				alert(link);
+		$cordovaBarcodeScanner.scan().then(function(barcodeData){
+			//console.log("format"+ barcodeData.format);
+			//alert(barcodeData.text);
+			var scan = barcodeData.text;
+			$( location ).attr("href", link);
+			
+		}, function(error){
+			console.log("error"+ error);
+		});
+		
+	}
+	
 });
+
 

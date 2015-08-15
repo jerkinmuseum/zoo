@@ -71,7 +71,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.animals'])
     .state('tab.animal-detail', {
       url: '/animals/:animalId',
       views: {
-        'tab-chats': {
+        'tab-animals': {
           templateUrl: 'templates/animal-detail.html',
           controller: 'AnimalDetailCtrl'
         }
